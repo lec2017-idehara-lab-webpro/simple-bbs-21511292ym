@@ -4,6 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>New User</title>
+      <style type="text/css">
+          
+      body {background-color: #87CEFA;}
+          
+      
+      </style>  
+      
   </head>
   <body>
 
@@ -23,7 +30,7 @@
   if( $q->errno != 0 )
     print( $q->error );
   else
-    print("登録しました");
+    print("書き込みに成功しました");
 
   print ("<a href='index.php'>掲示板へ</a>");
 

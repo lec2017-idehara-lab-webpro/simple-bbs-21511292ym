@@ -4,9 +4,15 @@
   <head>
     <meta charset="utf-8">
     <title>New User</title>
+      <style type="text/css">
+          
+      body {background-color: #87CEFA;}
+          
+      
+      </style>  
   </head>
   <body>
-
+<H1>新規登録ページ</H1>
 <?php
   include_once('database.php');
   if( isset($_POST['uid']) && strlen($_POST['uid'])>0 )

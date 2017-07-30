@@ -4,6 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>Response</title>
+      <style type="text/css">
+          
+      body {background-color: #87CEFA;}
+          
+      
+      </style>  
   </head>
   <body>
 
@@ -24,7 +30,7 @@
   if( $resnr > 0 )
     print( $resnr . " への返信です。<hr />");
   else
-    print( "新規書き込み" );
+    print( "新規の書き込みページ" );
 
   // 本当は、ログインしていないと書けない
 
@@ -33,9 +39,11 @@
 
 print "
  <form action='postres.php' method='post'>
-   <input type='text' name='mes'>
+   <textarea name='message' cols='30' maxlength='300'>
+   </textarea>
    <input type='hidden' name='resnr' value='$resnr'>
-   <input type='submit'>
+   <input type='submit' value='送信する'>
+<input type='reset' value='入力テキストをリセット'>
  </form>
  ";
 ?>

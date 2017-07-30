@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>掲示板</title>
+    <title>21511292の掲示板</title>
       
       <style type="text/css">
           
@@ -16,11 +16,11 @@
   </head>
   <body>
 
-<h1>開発中の掲示板</h1>
+<h1>掲示板へようこそ！</h1>
 
 <?php
   if( isset($_SESSION['login']) && strlen($_SESSION['login'])>0 )
-    print "{$_SESSION['name']} としてログイン中です。";
+    print "{$_SESSION['name']} でログイン中です。";
   print "<a href='login.php'>LOGIN</a>";
 ?>
 
@@ -55,7 +55,7 @@
 
   <form action='res.php' method='GET'>
     <input type=hidden name=res value='0'>
-    <input type=submit value='新規書き込み'>
+    <input type=submit value='新規書き込みはここをクリック'>
   </form>
 
 

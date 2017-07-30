@@ -7,10 +7,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>ログインページ</title>
   </head>
-  <body>
-    <H1>LOGIN</H1>
+<style type="text/css">
+          
+      body {background-color: #87CEFA;}
+          
+      
+      </style>  
+    <H1>ログイン</H1>
     <FORM ACTION="home.php" METHOD="POST">
     <TABLE>
     <TR><TH>ID</TH><TD><INPUT TYPE="TEXT" NAME="id"></TD></TR>
@@ -19,6 +24,6 @@
     <INPUT TYPE="submit" VALUE="ログイン">
     </FORM>
     <hr />
-    <a href='newuser.php'>新規登録</a>
+    <a href='newuser.php'>新規登録はここをクリック</a>
   </body>
 </html>

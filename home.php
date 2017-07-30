@@ -4,6 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+      <style type="text/css">
+          
+      body {background-color: #87CEFA;}
+          
+      
+      </style>  
+      
   </head>
   <body>
 
@@ -23,14 +30,14 @@
         // SESSION['login'] でいつでもユーザ ID を参照できるように
         $_SESSION['login'] = $_POST['id'];
         $_SESSION['name'] = $name;
-        print ("$name さん、こんにちは。<hr />");
+        print ("$name でログインに成功しました。<hr />");
       }
       else
-        print ("Login Failed <hr />");
+        print ("ログイン失敗 <hr />");
     }
     else
-      print ("Login Failed <hr />");
-    // パスワードが合わなかったときと、ユーザが存在しなかったときでメッセージを変えない
+      print ("ログイン失敗 <hr />");
+   
   }
  ?>
 

@@ -4,6 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>New User</title>
+      <style type="text/css">
+          
+      body {background-color: #87CEFA;}
+          
+      
+      </style>  
   </head>
   <body>
 
